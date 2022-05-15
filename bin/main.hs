@@ -27,4 +27,4 @@ bmiTell2 weight height
     | weight / height ^ 2 <= 30.0 = "You're fat! Lose some weight, fatty!"
     | otherwise = "You're a whale, congratulations!"
 -- main = putStrLn . show $ doubleMe 4
-main = putStrLn . show $ capital ""
+main = putStrLn . show $ bmiTell2 85 1.90
