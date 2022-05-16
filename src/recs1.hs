@@ -30,3 +30,12 @@ multThree x y z = x * y * z
 compareWithHundred :: (Num a, Ord a) => a -> Ordering
 compareWithHundred x = compare 100 x
 
+divideByTen :: (Floating a) => a -> a
+divideByTen = (/10)
+
+-- function as args
+applyTwice :: (a -> a) -> a -> a
+applyTwice f x = f (f x)
+--applyTwice (+3) 10
+--16
+
