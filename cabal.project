@@ -1,0 +1,4 @@
+cabal-version 3.6.2.0
+
+-- build-depends:     base ^>=4.13.0.0 --base package
+--                    , random           -- random package where System.Random can be found
