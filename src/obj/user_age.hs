@@ -4,7 +4,7 @@ main :: IO ()
 main = 
     print $ displayAge 10
 
-displayAge :: Int -> Int
+displayAge :: Int -> Text
 displayAge age = 
     "The age of user is: " <> toText age
 

@@ -1,3 +1,16 @@
-doubleMe x = x + x
+module Main where
 
-main = putStrLn . show $ doubleMe 4
+import System.IO
+
+c :: Integer
+c = 4
+
+foo :: Integer -> Integer
+foo a =
+  b where
+    b = a * 2 * c
+
+main = do
+  putStrLn $ show $ foo 10
+
+-- main = putStrLn . show $ doubleMe 4
