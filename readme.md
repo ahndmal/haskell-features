@@ -21,11 +21,17 @@ stack ghc -- -dynamic FILE.hs
 
 https://github.com/hdbc/hdbc
 
-```
+```haskell
 ghc --make -o setup Setup.lhs
 ./setup configure
 ./setup build
 sudo ./setup install
 ```
 
+prefix-afix:
+
+```haskell
 x `f` y == f x y
+average ns = sum ns ‘div‘ length ns == div (sum ns) (length ns)
+
+```
