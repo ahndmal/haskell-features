@@ -21,7 +21,7 @@ stack ghc -- -dynamic FILE.hs
 
 https://github.com/hdbc/hdbc
 
-```haskell
+```
 ghc --make -o setup Setup.lhs
 ./setup configure
 ./setup build
@@ -34,4 +34,11 @@ prefix-afix:
 x `f` y == f x y
 average ns = sum ns ‘div‘ length ns == div (sum ns) (length ns)
 
+```
+
+Concept of funcs:
+
+```
+concept1 = sum . map (^2) . filter even
+map f . map g = map (f . g)
 ```
