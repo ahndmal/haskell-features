@@ -14,3 +14,11 @@ spec = do
     it "should work for some random cases" $ do
       property $ \ n s -> do
         repeatStr n s `shouldBe` concat (replicate n s)
+
+module Codewars.Arrays where
+
+import Data.List
+
+positiveSum :: [Int] -> Int
+positiveSum xs = sum $ filter (>0) xs        
+positiveSum = sum . filter (>0)
