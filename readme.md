@@ -1,3 +1,18 @@
+## Haskell Core
+
+class is a collection of related types
+
+```haskell
+
+data Player = O | B | X
+              deriving (d, Eq, Show)
+
+instance Eq Player where
+       O == O = True
+       B == B = True
+
+```
+
 ## Cabal
 
 https://cabal.readthedocs.io/en/3.6/getting-started.html
