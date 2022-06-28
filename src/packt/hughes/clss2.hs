@@ -1,7 +1,7 @@
 module Clss where
 
 class Cat c where
-    greet :: a -> a
+    greet :: String -> String
     greet a = "Hello " ++ a
 
 main :: IO ()
