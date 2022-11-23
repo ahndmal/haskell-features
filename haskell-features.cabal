@@ -32,5 +32,6 @@ executable haskell-features
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:    base ^>=4.13.0.0
+                    , random >= 1.2.1.1
     hs-source-dirs:   app
     default-language: Haskell2010
