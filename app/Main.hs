@@ -21,13 +21,13 @@ generateLorem a = generateL
   where lorem = "Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis sociosqu pretium, congue tincidunt maecenas "
         loremWords = words lorem
         lorLength = length loremWords
-        lorNew = " " ++ loremWords !! a ++ " "
+        lorNew = " " ++ (loremWords !! a) ++ " "
         generateL = map (\i -> lorem !! randomRIO (1, i)) [1..lorLength]
 
 
 processFiles :: Int -> IO Int
 processFiles a = do
-  let fileUrl = "/home/andrii/Documents/lorem" ++ show a ++ ".txt"
+  let fileUrl = "/home/andrii/Documents/lorem" ++ (show a) ++ ".txt"
   handle <- openFile fileUrl ReadMode
   contents <- hGetContents handle
   let contentsLength = length contents
