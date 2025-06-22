@@ -13,13 +13,11 @@ import qualified Data.ByteString.Lazy.Char8 as BL
 
 data Struct = Struct { x :: Int, y :: Int, z :: Int, k :: Te } deriving (Generic, Show)
 
-
 data Te = Te {z::Int} deriving (Generic, Show)
 instance FromJSON Struct
 instance ToJSON Struct
 instance ToJSON Te
 instance FromJSON Te
-
 
 decodeJSONToStruct :: BL.ByteString -> Maybe Struct
 decodeJSONToStruct stringValue = decode stringValue
